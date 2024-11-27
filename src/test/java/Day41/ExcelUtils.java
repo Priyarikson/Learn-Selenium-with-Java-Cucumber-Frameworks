@@ -23,10 +23,6 @@ public class ExcelUtils {
 	public static XSSFCell cell;
 	public static CellStyle style;  
 
-
-
-
-
 	public static int getRowCount(String xlfile,String xlsheet) throws IOException 
 	{ 
 		fi=new FileInputStream(xlfile);
@@ -64,6 +60,7 @@ public class ExcelUtils {
 		try 
 		{
 			//data=cell.toString();
+			//or
 			DataFormatter formatter = new DataFormatter();
 			data = formatter.formatCellValue(cell); //Returns the formatted value of a cell as a String regardless of the cell type.
 		}
